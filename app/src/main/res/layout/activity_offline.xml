@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#ce93d8"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.woot.company.woot.OfflineActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome to Woot CABS"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="italic"
+        android:text="Note: This is an offline booking and charges may be applied to send SMS"
+        android:textAlignment="center"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view2"></android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view2"
+        android:layout_alignEnd="@+id/textView2"></android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView2"></android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send SMS"
+        style="@style/rounded_text"
+        android:gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:id="@+id/button"
+        android:background="@drawable/another_one"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPostalAddress"
+        android:hint="From Address"
+        android:fontFamily="sans-serif-smallcaps"
+        style="@style/rounded_text"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        style="@style/rounded_text"
+        android:layout_marginBottom="10dp"
+        android:hint="To Address"
+        android:id="@+id/editText"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        style="@style/rounded_text"
+        android:inputType="phone"
+        android:hint="Phone with Country Code"
+        android:ems="11"
+        android:id="@+id/editText3"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

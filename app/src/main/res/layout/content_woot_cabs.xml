@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="#000000"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:context=".MapsActivity" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autocomplete_places"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="From"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/green"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        style="@style/rounded_text"
+        android:singleLine="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/powered_by_google_light"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/autoCompleteTextView"
+        android:layout_alignParentEnd="true" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="To"
+        android:drawableLeft="@drawable/red"
+        android:drawablePadding="5dp"
+        style="@style/rounded_text"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:singleLine="true"
+        android:layout_below="@+id/autocomplete_places"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/radioGroup"
+        android:layout_above="@+id/radioGroup2"
+        android:layout_alignEnd="@+id/imageView2"
+        android:background="#ffffff">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hatchback"
+            android:text="Hatchback"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sedan"
+            android:text="Sedan"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/suv"
+            android:text="SUV"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tt"
+            android:text="Tempo Traveller"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_above="@+id/button2"
+        android:layout_alignEnd="@+id/imageView2"
+        android:id="@+id/radioGroup2"
+        android:background="#dffffe">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/oneway"
+            android:text="One Way"
+            android:onClick="onRouteClicked"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/twoway"
+            android:text="Two Way"
+            android:onClick="onRouteClicked"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check fare"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00838f"
+        android:onClick="checkFare"/>
+
+</RelativeLayout>

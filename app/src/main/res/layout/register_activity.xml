@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_login480"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Name"
+        android:id="@+id/idEditName"
+        android:layout_gravity="center_horizontal"
+        android:theme="@style/MyEditTextTheme"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:paddingBottom="20dp"
+        />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:id="@+id/idEditEmail"
+        android:layout_margin="10dp"
+
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:paddingBottom="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:id="@+id/idEditPass"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:theme="@style/MyEditTextTheme"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:paddingBottom="20dp"
+        />
+
+    <!--<RadioGroup-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:id="@+id/idRadioGroup"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:theme="@style/MyEditTextTheme"-->
+        <!-->-->
+        <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Admin Hotel"-->
+            <!--android:id="@+id/idRadioAdmin"-->
+            <!--android:textColor="@color/white"-->
+            <!--/>-->
+        <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Users"-->
+            <!--android:id="@+id/idRadioUser"-->
+            <!--android:textColor="@color/white"-->
+            <!--/>-->
+    <!--</RadioGroup>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:background="@color/button"
+            android:text="Register"
+            android:id="@+id/idBtnRegister"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

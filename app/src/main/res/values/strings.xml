@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Wootigo</string>
+    <string name="title_activity_login">Sign In</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_woot_cabs">WootCabsActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="fares">Hatchback (10/km), Sedan (12/km), SUV (13/km), Tempo Traveller (15/km)</string>
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="title_activity_splash_full">SplashFullActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="paradise">Paradise Hotel &amp; Resort</string>
+    <string name="text_welcome">Welcome to Online Hotel booking app</string>
+
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_logout">Logout</string>
+
+    <string-array name="room_type">
+        <item>Single bed</item>
+        <item>Double bed</item>
+    </string-array>
+    <string name="title_spinner">Select bed rooms</string>
+    <string name="enter_your_registered_email">Enter Your registered Email</string>
+    <string name="enter_old_password">Enter Old Password</string>
+    <string name="enter_new_password">Enter New password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="save">Save</string>
+    <string name="change_password">Change Password</string>
+</resources>

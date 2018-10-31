@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/action_bar"
+        android:id="@+id/idRelative2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New City Details"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            />
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/idBackButtonCityDetail"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:background="@drawable/back50"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/idBackButtonCityDetail"
+
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background"
+        android:layout_below="@+id/idRelative2"
+        android:layout_alignParentBottom="true"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:padding="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City Name"
+                android:textColor="#fff"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:id="@+id/idText1"
+                />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_edittext"
+                android:layout_marginTop="10dp"
+                android:hint="City Name"
+                android:textColorHint="@color/hint_color"
+                android:textColor="@color/white"
+                android:id="@+id/idTitleCityNew"
+                android:layout_below="@+id/idText1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="City Image"
+                android:textColor="#fff"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/idTitleCityNew"
+                android:id="@+id/idText2"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/idText2"
+                android:id="@+id/idRelative1"
+                >
+                <EditText
+                    android:id="@+id/idEditImageName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_edittext"
+                    android:layout_toLeftOf="@+id/idBtnUpload"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/white"
+                    android:singleLine="true"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="upload"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/idBtnUpload"
+                    android:layout_centerVertical="true"
+                    android:background="@color/button"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suggested size: 1000*625 of higher"
+                android:textStyle="italic"
+                android:textColor="#fff"
+                android:layout_below="@+id/idRelative1"
+                android:id="@+id/idText3"
+                />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:id="@+id/idImageCityNew"
+                android:layout_below="@+id/idText3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Tap to add/update picture"
+                android:layout_below="@+id/idImageCityNew"
+                android:textColor="@color/white"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE/UPDATE CITY"
+        android:background="@color/button"
+        android:id="@+id/idBtnSaveNewCity"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        />
+</RelativeLayout>

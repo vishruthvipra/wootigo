@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Relative_layout_city"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/idCityImage"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/border_layouts_transparent"
+        />
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_alignBottom="@+id/idCityImage"-->
+        <!--android:background="@drawable/border_layouts_transparent"-->
+        <!--android:padding="20dp"-->
+        <!-->-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/idTvCity"-->
+            <!--style="@style/Base.TextAppearance.AppCompat.Large"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Lahore"-->
+            <!--android:textColor="#fff" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/idImageCityIcon"-->
+            <!--android:layout_width="17dp"-->
+            <!--android:layout_height="17dp"-->
+            <!--android:background="@drawable/icon_city"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_toLeftOf="@+id/idTvTotalHotel"-->
+            <!--android:layout_toStartOf="@+id/idTvTotalHotel" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/idTvTotalHotel"-->
+            <!--style="@style/Base.TextAppearance.AppCompat.Medium"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="17dp"-->
+            <!--android:text="135"-->
+            <!--android:textColor="@color/button"-->
+            <!--android:textStyle="bold"-->
+            <!--android:gravity="bottom"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_toLeftOf="@+id/idTvHotels"-->
+            <!--android:layout_toStartOf="@+id/idTvHotels" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/idTvHotels"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="17dp"-->
+            <!--android:text="Hotels"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="12sp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true" />-->
+    <!--</RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="100dp"
+        android:layout_alignBottom="@+id/idCityImage"
+        android:background="@drawable/border_layouts_transparent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lahore"
+            android:id="@+id/idTvCity"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            android:gravity="bottom"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@drawable/icon_city"
+            android:id="@+id/idImageCityIcon"
+            android:layout_toLeftOf="@+id/idTvTotalHotel"
+            android:layout_marginRight="3dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="135"
+            android:id="@+id/idTvTotalHotel"
+            android:layout_toLeftOf="@+id/idTvHotels"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_alignBaseline="@+id/idTvHotels"
+            android:textColor="@color/button"
+            android:textStyle="bold"
+            android:layout_marginRight="3dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotels"
+            android:id="@+id/idTvHotels"
+            android:gravity="bottom"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            style="@style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

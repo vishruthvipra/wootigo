@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_toast_layout_id"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:background="@drawable/border_edittext"
+    >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="hellow ho"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

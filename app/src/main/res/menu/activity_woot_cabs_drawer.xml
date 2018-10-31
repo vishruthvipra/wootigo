@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_promo_activity"
+            android:icon="@drawable/ic_toys_black_24dp"
+            android:title="Promotions" />
+        <item
+            android:id="@+id/nav_refer_activity"
+            android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+            android:title="Wallet" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_swap_vert_black_24dp"
+            android:title="Rides" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_supervisor_account_black_24dp"
+            android:title="Woot Share" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_hotel_black_24dp"
+            android:title="Woot Stay" />
+        <item
+            android:id="@+id/nav_rate_card"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="Rate Card" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="Logout" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_new_releases_black_24dp"
+            android:title="About" />
+    </group>
+
+</menu>

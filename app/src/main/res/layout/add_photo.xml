@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/action_bar"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a new Photo"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            />
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/idBackButtonAddPhoto"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back50"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/idBackButtonAddPhoto"
+
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TITLE"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_edittext"
+                android:layout_marginTop="10dp"
+                android:hint="Type a title"
+                android:id="@+id/idTitleNewPhoto"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="UPLOAD PHOTO"
+                android:layout_marginTop="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suggested size: 1000*625 of higher"
+                android:textStyle="italic"
+                />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:background="@color/border_edittext"
+                android:id="@+id/idNewPhoto"
+                />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD PHOTO TO GALLERY"
+                android:layout_marginTop="16dp"
+                android:background="@color/button"
+                android:id="@+id/idBtnSaveNewPhoto"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

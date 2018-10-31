@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:background="@color/action_bar"-->
+        <!--android:id="@+id/idRelative"-->
+        <!-->-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="Hotels List"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:textStyle="bold"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idListViewHotels"
+        android:background="@color/background"
+        android:layout_below="@+id/idRelative"
+        >
+
+    </ListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:touchscreenBlocksFocus="false"
+    android:fitsSystemWindows="true"
+    tools:context="com.woot.company.woot.SplashScreen">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:theme="@android:style/Theme.DeviceDefault.Wallpaper">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/wootigo"
+                    android:layout_gravity="center"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:scrolling_image_view="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:fillViewport="false"
+                android:background="#FFFFFF">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="bottom"
+                    tools:context=".WootCabsActivity"
+                    android:background="#FFFFFF">
+
+
+
+
+
+
+
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="#FFFFFF">
+
+                        <com.woot.company.woot.ScrollingImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:layout_gravity="bottom"
+                            scrolling_image_view:speed="1.5dp"
+                            scrolling_image_view:src="@drawable/scrolling_background" />
+
+                        <com.woot.company.woot.ScrollingImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            scrolling_image_view:speed="4dp"
+                            scrolling_image_view:src="@drawable/scrolling_foreground" />
+
+
+                        <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:background="@drawable/carwoot" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/action_bar"
+        android:id="@+id/idLayoutAction"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idTitle"
+            android:text="TITle"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            />
+
+    </RelativeLayout>
+
+    <!--<ImageView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:layout_below="@+id/idLayoutAction"-->
+        <!--android:id="@+id/idBackRoomDetailImage"-->
+        <!--/>-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentRight="true"
+        android:background="#50ff0000"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="$"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="83"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:id="@+id/idPriceRoom"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Detail of room"
+        android:id="@+id/idDetail"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Services:"
+        android:id="@+id/services"
+        android:layout_below="@+id/idDetail"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="services detail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/services"
+        android:id="@+id/idServices"
+        />
+    <RatingBar
+        android:id="@+id/ratingBarIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="1"
+        android:layout_below="@+id/idServices"
+        style="@style/foodRatingBar"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="BOOK THIS ROOM"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#fff"
+        android:background="@color/button"
+        android:id="@+id/idBtnBookRoom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
